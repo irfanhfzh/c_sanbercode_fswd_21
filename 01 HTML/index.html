@@ -1,0 +1,179 @@
+<!-- SanberCode, Kelas Laravel - Web Developer (Batch 21) -->
+<!-- Irfan Hafizh -->
+<!-- Day 1 HTML Senin, 11 Januari 2021-->
+<!-- Ini adalah Struktur HTML -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ini Struktur HTML</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <h1>INI HALAMAN HOME</h1>
+
+        <!-- Ini Tag Heading -->
+        <h1>Ini Heading 1</h1>
+        <h2>Ini Heading 2</h2>
+        <h3>Ini Heading 3</h3>
+        <h4>Ini Heading 4</h4>
+        <h5>Ini Heading 5</h5>
+        <h6>Ini Heading 6</h6>
+
+        <!-- Ini Tag Text/Paragraph -->
+        <p>Ini Text/Paragraph</p>
+
+        <!-- Ini Tag untuk Text Formatting -->
+        <p>Ini contoh Text Formatting 
+            <br>br untuk membuat baris baru <br> 
+            <em>ini tag em</em> <br>
+            <b>ini tag b (bold)</b> <br>
+            <i>ini tag i</i> <br>
+            <small>ini tag small</small> <br>
+            <strong>ini tag strong</strong> <br>
+            <sub>ini tag sub</sub> <br>
+            <sup>ini tag sup</sup> <br>
+            <ins>ini tag ins</ins> <br>
+            <del>ini tag del</del> <br>
+            <mark>ini tag mark</mark><br>
+        </p>
+
+        <!-- Ini Tag Link -->
+        <a href="https://google.co.id">Ini Link menuju Google dengan Tab yang sama</a>
+        <br>
+        <a href="https://facebook.com" target="_blank">Ini Link menuju Facebook dengan membuat Tab baru</a>
+
+        <!-- 
+            Membuat Table 
+            th = heading
+            tr = baris
+            td = column/data
+        -->
+        <table border="1">
+            <tr> 
+                <th>Nama</th>
+                <th>Kelas</th>
+                <th>Hobi</th>
+            </tr>
+            <tr>
+                <td>Irfan</td>
+                <td>XII</td>
+                <td>Main</td>
+            </tr>
+            <tr>
+                <td>Hafizh</td>
+                <td>XI</td>
+                <td>Main</td>
+            </tr>
+            <tr>
+                <td>Ganteng</td>
+                <td>X</td>
+                <td>Main</td>
+            </tr>
+        </table>
+        
+        <br>
+
+        <!-- Membuat Tag List -->
+        <ul>
+            <li>ini tag ul</li>
+            <li>ini tag ul</li>
+            <li>ini tag ul</li>
+        </ul>
+        <ol>
+            <li>ini tag ol</li> 
+            <li>ini tag ol</li> 
+            <li>ini tag ol</li> 
+        </ol>
+        <dl>
+            <dt>Irfan</dt>
+            <dd>Hafizh</dd>
+        </dl>
+
+        <br>
+    
+        <!-- Membuat Form -->
+        <form>
+            <fieldset>
+                <legend>Nama & Pesan</legend>
+                <label for="nama">Nama</label>
+                <input type="text" name="input" id="nama" placeholder="Nama Anda">
+                <br>
+                <label for="pesan">Pesan</label>
+                <textarea name="textarea" id="pesan" cols="30" rows="10"></textarea>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Masukkan Data</legend>
+                <label>Hobi</label> <br>
+                <input type="checkbox" name="hobi" id="" value="0" checked> Menggambar <br>
+                <input type="checkbox" name="hobi" id="" value="1"> Menulis <br>
+                <input type="checkbox" name="hobi" id="" value="2"> Membaca <br>
+                <br>
+                <label>Jenis Kelamin</label> <br>
+                <input type="radio" name="gender" id=""> Laki laki <br>
+                <input type="radio" name="gender" id=""> Perempuan <br>
+                <br>
+                <label>Pelajaran</label>
+                <select name="pelajaran" id="">
+                    <optgroup label="Front-End">                    
+                        <option value="0">HTML</option>
+                        <option value="1">CSS</option>
+                        <option value="2">JAVASCRIPT</option>
+                    </optgroup>
+                    <optgroup label="Back-End">
+                        <option value="3">PHP</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <p>Contoh Input type lainnya</p>
+                <label>Button </label><input type="button" value="Ini Button"><br>
+                <label>Color </label><input type="color"><br>
+                <label>Date </label><input type="date"><br>
+                <label>Date Time Local </label><input type="datetime-local"><br>
+                <label>Email </label><input type="email" placeholder="irfanhafizh53@gmail.com"><br>
+                <label>File </label><input type="file"><br>
+                <label>Hidden </label><input type="hidden"><br>
+                <label>Image </label><input type="image" src="html.png" alt="Ini Gambar"><br>
+                <label>Month </label><input type="month"><br>
+                <label>Number </label><input type="number" placeholder="2804201001"><br>
+                <label>Password </label><input type="password" placeholder="inipassword"><br>
+                <label>Range </label><input type="range"><br>
+                <label>Reset </label><input type="reset"><br>
+                <label>Search </label><input type="search" placeholder="Search"><br>
+                <label>Telp </label><input type="tel" placeholder="0212131412"><br>
+                <label>Time </label><input type="time"><br>
+                <label>URL </label><input type="url" placeholder="https://google.co.id"><br>
+                <label>Week </label><input type="week"><br>
+                <br>
+                <input type="submit" name="" id="" value="Kirim Data">
+            </fieldset> 
+        </form>
+
+        <br>
+
+        <!-- Ini Tag Image/Gambar -->
+        <img src="html.png" alt="Struktur HTML">
+        <br>
+        <img src="gambar/html.png" alt="Struktur HTML" width="520" height="250">
+        <br>
+        <img src="gambar/semantic.png" alt="HTML Semantics">
+        
+        <br>
+
+        <!-- Untuk membuat Pengelompokkan element html (non-semantics)-->
+        <div style="border: 1px solid black;">
+            <p>ini adalah contoh div, block-level</p>
+        </div>
+        <p>Ini adalah contoh <span style="border: 1px solid black;">span</span>, inline</p>
+
+        <!-- Ini Tag iframe (untuk mengambil halaman website ke halaman web kita) -->
+        <iframe src="https://panhpzh.000webhostapp.com/" frameborder="0" width="500" height="750"></iframe>
+        
+        <br>
+        
+        <p>Contoh Charset Copyright &copy; Irfan Hafizh 2021</p>
+</html>
