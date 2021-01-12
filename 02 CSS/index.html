@@ -1,0 +1,96 @@
+<!-- SanberCode, Kelas Laravel - Web Developer (Batch 21) -->
+<!-- Irfan Hafizh -->
+<!-- Day 2 CSS Selasa, 12 Januari 2021-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+        <meta charset="UTF-8">
+        <!-- Contoh penulisan CSS Eksternal di file css sendiri -->
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            /* Contoh penulisan CSS Internal pada file yang sama */
+            h2 {
+              color: green;  
+            }
+            h3,h4,h5,h6 {
+                color: white;
+            }
+        </style>
+    </head>
+    <!-- 
+        1. inline : langsung pada tag HTML
+        2. internal : pada file yang sama
+        3. eksternal : file css sendiri/file yang terpisah
+
+        selector id(#) dan class(.) untuk memberi style di css pada tag HTML tertentu
+     -->
+    <body>
+        <!-- Contoh penulisan CSS Inline langsung pada tag HTML -->
+        <a href="index.html" style="color: red;">Home</a>
+        <a href="about.html" class="link">About</a>
+
+        <div class="class">
+            <h1>INI HALAMAN HOME</h1>
+        </div>
+
+        <!-- Ini Tag Heading -->
+        <div id="id">
+            <h1>Ini Heading 1</h1>
+            <h2>Ini Heading 2</h2>
+            <h3>Ini Heading 3</h3>
+            <h4>Ini Display Inline</h4>
+            <h5>Ini Display Inline</h5>
+            <h6>Ini Display Block</h6>
+            <h6>Ini Display Block</h6>
+            <h6>Ini Display Block</h6>
+            <p class="ib">DISPLAY INLINE BLOCK</p>
+            <p class="ib">DISPLAY INLINE BLOCK</p>
+            <p class="ib">DISPLAY INLINE BLOCK</p>
+        </div>
+        
+        <p class="mm">Menghilangkan</p>
+        <p class="mmm">Menghapus</p>
+
+        <div class="bm">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat asperiores expedita, vero sunt quis nam tempora assumenda molestiae provident nostrum perspiciatis non omnis dolorum, odio excepturi similique, neque dolor voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate vel officiis ducimus harum sed a quis. Perspiciatis assumenda magni quia deleniti hic temporibus voluptates, cumque ratione cupiditate molestiae voluptatem.
+            </p>
+        </div>
+
+        <div class="pos">
+            <h1>HALO DUNIAKUUUUUU</h1>
+        </div>
+
+        <div class="float">
+            <h2>Hahahahahahahaha Kocak</h2>
+            <h3>Hahahahahahahaha Kocak</h3>
+        </div>
+
+        <p id="lorem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ducimus quo corporis, eius expedita voluptatibus tempore sint, repellendus neque obcaecati cum perspiciatis magni at. Maxime quia itaque saepe enim at. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur minus, excepturi, reprehenderit repellendus numquam perferendis assumenda nemo aut accusamus tempore est quas adipisci temporibus, commodi eveniet. Expedita eaque tempore delectus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam nemo sunt tempore iste sapiente excepturi delectus modi consectetur, maxime ipsum repellat magni officiis iure voluptatum placeat repellendus laudantium neque possimus.
+        </p>
+
+        <!-- Ini Tag Text/Paragraph -->
+        <p id="textfont">
+            Ini Text/Paragraph,
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sint, dolor sapiente illum dolorum minus sequi nisi optio eligendi distinctio autem at deserunt vitae sed eos beatae vel. Itaque, ipsum?
+        </p>
+
+        <br>
+
+        <!-- Ini Tag Image/Gambar -->
+        <img src="gambar/html.png" alt="Struktur HTML" width="520" height="250">
+        <br>
+        <img src="gambar/semantic.png" alt="HTML Semantics">
+        
+        <br>
+
+        <!-- Untuk membuat Pengelompokkan element html (non-semantics)-->
+        <div style="border: 1px solid black;">
+            <p>ini adalah contoh div, block-level</p>
+        </div>
+        <p>Ini adalah contoh <span style="border: 1px solid black;">span</span>, inline</p>
+        
+        <p>Contoh Charset Copyright &copy; Irfan Hafizh 2021</p>
+</html>

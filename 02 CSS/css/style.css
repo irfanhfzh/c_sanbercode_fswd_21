@@ -1,0 +1,246 @@
+/* 
+        SanberCode, Kelas Laravel - Web Developer (Batch 21)
+        Irfan Hafizh
+        Day 2 CSS Selasa, 12 Januari 2021 
+*/
+/* Contoh struktur dasar CSS */
+/* 
+        selektor{
+            property1: nilai;
+            property2: nilai2
+        } 
+*/
+
+/* Referensi lain dari CSS ada di w3scools */
+
+/* Contoh */
+h1 {
+    color: blue;
+    font-size: 50px;
+}
+
+/* id(#) dan class(.) */
+#id {
+    background-color: black;
+}
+
+.class {
+    background-color: aqua;
+}
+
+/* Body styling / Background styling */
+body {
+    /* penulisan biasa */
+    /* 
+    background-color: white;
+    background-color: rgb(255, 0, 0);
+    background-color: rgb(red, green, blue);
+    background-color: rgba(red, green, blue, alpha);
+    background-image: url('../css.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    */
+
+    /* penulisan singkat */
+    background: white url('../css.png') no-repeat fixed center;
+}
+
+/* Text styling */
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+#lorem {
+    text-align: justify;
+    text-indent: 30px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    line-height: 25px;
+}
+
+/* Font styling */
+#textfont {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Link styling */
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+/* Kondisi setelah diklik / sudah dikunjungi */
+.link:visited{
+    color: green;
+}
+
+/* Kondisi hover mouse, berada di atas text */
+.link:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Kondisi ketika di tahan saat klik */
+.link:active{
+    color: red;
+}
+
+/* Dimensi CSS */
+#id {
+    width: 500px;
+    height: 450px;
+    /* max-width: 100px;
+    max-height: 150px; */
+}
+
+/* Display CSS */
+h4,h5 {
+    display: inline;
+    background-color: red;
+}
+
+h6 {
+    display: inli;
+    background-color: red;
+}
+
+.ib {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: red;
+}
+
+/* Menghilangkan dan Menghapus pada CSS */
+.mm {
+    visibility: hidden;
+    color: white;
+    background-color: red;
+}
+
+.mmm {
+    display: none;
+    color: white;
+    background-color: red;
+}
+
+/* 
+Box Model pada CSS
+    ///Penulisan Biasa (Berlaku untuk Margin dan Padding)
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+    ///Penulisan Singkat(Berlaku untuk Margin dan Padding)
+    margin : 10px 20px 30p 40px
+    padding : 10px 20px 30p 40px
+    -Top, Right, Bottom, Left => 4
+    -Top, Right & Left, Bottom => 3
+    -Top & Bottom, Right & Left => 2
+    ---------------------------------------------------------
+    Margin = jarak antara element ke element
+    Padding = antara jarak di dalam di border 
+    Border = memberikan border pada element
+*/
+
+/* Contoh Box Model */
+.bm {
+    border: 3px solid black;
+    background-color: red;
+    margin: 20px;
+}
+.bm p {
+    background-color: white;
+    padding: 50px;
+}
+
+/* 
+    Position pada CSS 
+    static = standard position
+    relative = dapat di atur dengan vertical = top bottom & horizontal = left right
+    absolute = dapat di atur dengan vertical = top bottom & horizontal = left right tapi dapat berpengaruh pada element htmlnya / menganggap element html lainnya tidak ada, jadi dia akan default dari atas.
+    fixed = position tidak akan bergerak saat di scroll / posisi akan menetap pada saat browser di scroll
+
+    Position Parent element
+    <div> <-- Parent element
+        <h1>Halo Dunia</h1>
+    </div>
+    absolute = tergantung pada parent elementnya
+    relative = tergantung pada browser
+*/
+
+.pos{
+    background-color: red;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+.pos h1 {
+    font-size: 100px;
+}
+
+/* 
+    z-index pada CSS = lapisan pada sebuah element
+*/
+.pos {
+    z-index: -1;
+}
+
+/* 
+    float = membuat element mengisi bagian yang kosong pada content nya, 
+    contoh float: left; akan kekiri & float: right; kekanan
+    dan
+    clear = untuk menghilangkan efek efek float
+*/
+
+.float {
+    background-color: black;
+    height: 50px;
+}
+
+.float h2 {
+    background-color: blue;
+    float: left;
+}
+
+.float h3 {
+    background-color: green;
+    float: right;
+}
+
+#lorem {
+    clear: both;
+}
+
+/* 
+    Selektor bagian 2
+    div a {) = div dan a sekaligus
+    div > a {} = langsung dibawah parentnya
+    p + div {} = setelah elemen 
+    div ~ p {} = semua bagian yang ada di bawahnya
+*/
+
+/* 
+    :hover = keadaan ketika mouse berada pada elemen tertentu
+    1. diri sendiri p:hover
+    2. elemen lain : 
+    > langsung didalam
+    + langsung setelah
+    contoh
+    p:hover > h2
+    p:hover + h2
+
+    focus = keadaan ketika input di klik
+    contoh
+    input:focus
+*/
