@@ -1,5 +1,4 @@
 # c_sanbercode_fswd_21
-https://irfanhfzh.github.io/c_sanbercode_fswd_21/
 
 <body>
     <h1>Hello World !</h1>
