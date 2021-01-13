@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #043464;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section {
+    margin: 20px;
+}
+
+.bagian > div {
+    margin: 20px 0;
+}
+
+.bagian {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bagian .center {
+    width: 75%;
+    margin: 20px;
+}
+
+.bagian .left {
+    width: 20%;
+}
+
+.left li {
+    list-style-type: none;
+}
+
+.bagian .right {
+    width: 20%;
+}
+
+.right li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.kartu {
+    display: flex;
+}
+
+.card-img-top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.copyright {
+    padding: 10px 0;
+}
+
+.card-text {
+    font-size: 20px;
+    margin: 3px 0;
+}
+
+.star {
+    font-size: 15px;
+}
+
+.dat {
+    font-size: 18px;
+}
+
+.diskon-text {
+    font-size: 17px;
+}
