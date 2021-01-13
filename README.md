@@ -3,22 +3,6 @@ https://irfanhfzh.github.io/c_sanbercode_fswd_21/
 
 Course SanberCode, Kelas Laravel - Web Development (Batch 21)
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SanberCode - Kelas Laravel - Web Development (Batch 21)</title>
-    <style>
-        ul li a {
-            text-decoration: none;
-        }
-
-        ul li a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
 <body>
     <h1>Hello World !</h1>
     <p>>> Course SanberCode, Kelas Laravel - Web Developer (Batch 21)</p>
