@@ -84,3 +84,15 @@
     background-color: #043464;
     color: white;
 }
+
+#main #accordionExample .list-group-item:after{
+    content: "\f107";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    float: right;
+}
+
+#main #accordionExample .list-group-item.collapsed:after{
+    content: "\f106";
+}
+
