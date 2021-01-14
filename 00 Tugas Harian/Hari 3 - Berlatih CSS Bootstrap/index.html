@@ -46,158 +46,187 @@
       <div class="bagian">
         <div class="left">
           <ul class="list-group">
-            <li class="list-group-item border-0"><h4>Filter</h4></li>
-            <li class="list-group-item border-top" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Kategori</li>
-            <li class="bg-light"><a class="collapse" id="collapseExample" href="">
-              <div class="form-check ml-3 mt-2">
-                <input class="form-check-input" type="radio" value="0" name="fashion" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Baju / Kaos
-                </label>
-              </div>
-              <div class="form-check ml-3">
-                <input class="form-check-input" type="radio" value="1" name="fashion" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Celana
-                </label>
-              </div>
-              <div class="form-check ml-3 mb-2">
-                <input class="form-check-input" type="radio" value="2" name="fashion" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Sepatu
-                </label>
-              </div>
-            </a></li>
-            <li class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">Lokasi</li>
-            <li class="bg-light"><a class="collapse" id="collapseExample1" href="">
-              <div class="form-check ml-3 mt-2">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Sumatera
-                </label>
-              </div>
-              <div class="form-check ml-3">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Jawa
-                </label>
-              </div>
-              <div class="form-check ml-3">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Kalimantan
-                </label>
-              </div>
-              <div class="form-check ml-3">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Sulawesi
-                </label>
-              </div>
-              <div class="form-check ml-3 mb-2">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Bali
-                </label>
-              </div>
-            </a></li>
-            <li class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">Harga</li>
-            <li><a class="collapse" id="collapseExample2" href="">
-              <form>
-                <div class="form-row align-items-center">
-                  <div class="col-auto">
-                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                    <div class="input-group my-2">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">Rp</div>
+            <li class="list-group-item border-0 filteran"><h5>Filter</h5></li>
+
+              <div class="accordion" id="accordionExample">
+                  <li class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Kategori
+                  </li>
+                  <li id="collapseOne" class="bg-light border" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="form-check ml-3 mt-2">
+                        <input class="form-check-input" type="radio" value="0" name="fashion" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Baju / Kaos
+                        </label>
                       </div>
-                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Harga Minimum">
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                    <div class="input-group mb-2">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">Rp</div>
+                      <div class="form-check ml-3">
+                        <input class="form-check-input" type="radio" value="1" name="fashion" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Celana
+                        </label>
                       </div>
-                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Harga Maximum">
+                      <div class="form-check ml-3 mb-2">
+                        <input class="form-check-input" type="radio" value="2" name="fashion" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Sepatu
+                        </label>
+                      </div>
+                  </li>
+              </div>
+              <div class="accordion" id="accordionExample">
+                  <li class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Lokasi
+                  </li>
+                  <li id="collapseOne" class="bg-light border" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="form-check ml-3 mt-2">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Sumatera
+                      </label>
                     </div>
-                  </div>
-                </div>
-              </form>
-            </a></li>
-            <li class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">Kondisi</li>
-            <li><a class="collapse" id="collapseExample3" href="">
-              <div class="form-check ml-3 mt-2">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Bekas
-                </label>
+                    <div class="form-check ml-3">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Jawa
+                      </label>
+                    </div>
+                    <div class="form-check ml-3">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Kalimantan
+                      </label>
+                    </div>
+                    <div class="form-check ml-3">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Sulawesi
+                      </label>
+                    </div>
+                    <div class="form-check ml-3 mb-2">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Bali
+                      </label>
+                    </div>
+                  </li>
               </div>
-              <div class="form-check ml-3 mb-2">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Baru
-                </label>
+              <div class="accordion" id="accordionExample">
+                  <li class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Harga
+                  </li>
+                  <li id="collapseOne" class="bg-light border" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <form>
+                      <div class="form-row align-items-center">
+                        <div class="col-auto">
+                          <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                          <div class="input-group my-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">Rp</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Harga Minimum">
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text">Rp</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Harga Maximum">
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </li>
               </div>
-            </a></li>
-            <li class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">Rating</li>
-            <li><a class="collapse" id="collapseExample4" href="">
-              <div class="form-check ml-3 my-2">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  <i class="fa fa-star"></i> 4 Keatas
-                </label>
+              <div class="accordion" id="accordionExample">
+                  <li class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Kondisi
+                  </li>
+                  <li id="collapseOne" class="bg-light border" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="form-check ml-3 mt-2">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Bekas
+                      </label>
+                    </div>
+                    <div class="form-check ml-3 mb-2">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Baru
+                      </label>
+                    </div>
+                  </li>
               </div>
-            </a></li>
-            <li class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">Pengiriman</li>
-            <li><a class="collapse" id="collapseExample5" href="">
-              <div class="form-check ml-3 mt-2">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  JNE
-                </label>
+              <div class="accordion" id="accordionExample">
+                  <li class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Rating
+                  </li>
+                  <li id="collapseOne" class="bg-light border" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="form-check ml-3 my-2">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        <i class="fa fa-star"></i> 4 Keatas
+                      </label>
+                    </div>
+                  </li>
               </div>
-              <div class="form-check ml-3">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  SiCepat
-                </label>
+              <div class="accordion" id="accordionExample">
+                  <li class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Pengiriman
+                  </li>
+                  <li id="collapseOne" class="bg-light border" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="form-check ml-3 mt-2">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        JNE
+                      </label>
+                    </div>
+                    <div class="form-check ml-3">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        SiCepat
+                      </label>
+                    </div>
+                    <div class="form-check ml-3 mb-2">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Pos Indonesia
+                      </label>
+                    </div>
+                  </li>
               </div>
-              <div class="form-check ml-3 mb-2">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Pos Indonesia
-                </label>
+              <div class="accordion" id="accordionExample">
+                  <li class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Penawaran
+                  </li>
+                  <li id="collapseOne" class="bg-light border" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="form-check ml-3 mt-2">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Gratis Ongkir
+                      </label>
+                    </div>
+                    <div class="form-check ml-3">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Cashback
+                      </label>
+                    </div>
+                    <div class="form-check ml-3">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        COD
+                      </label>
+                    </div>
+                    <div class="form-check ml-3 mb-2">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Diskon
+                      </label>
+                    </div>
+                  </li>
               </div>
-            </a></li>
-            <li class="list-group-item" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">Penawaran</li>
-            <li><a class="collapse" id="collapseExample6" href="">
-              <div class="form-check ml-3 mt-2">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Gratis Ongkir
-                </label>
-              </div>
-              <div class="form-check ml-3">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Cashback
-                </label>
-              </div>
-              <div class="form-check ml-3">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  COD
-                </label>
-              </div>
-              <div class="form-check ml-3 mb-2">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                  Diskon
-                </label>
-              </div>
-            </a></li>
           </ul>
         </div>
         <div class="center">
@@ -234,7 +263,7 @@
                 <div class="card-body bg-white">
                   <h5 class="card-title">Kaos Murah Keren</h5>
                   <p class="card-text">Rp50.000</p>
-                  <div class="star align-items-center">
+                  <div class="star align-items-center" style="color: orange;">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -252,7 +281,7 @@
                 <div class="card-body bg-white">
                   <h5 class="card-title">Celana Panjang Aja</h5>
                   <p class="card-text">Rp100.000</p>
-                  <div class="star align-items-center">
+                  <div class="star align-items-center" style="color: orange;">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -270,7 +299,7 @@
                 <div class="card-body bg-white">
                   <h5 class="card-title">Sepatu NB Ori</h5>
                   <p class="card-text">Rp150.000</p>
-                  <div class="star align-items-center">
+                  <div class="star align-items-center" style="color: orange;">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -300,7 +329,7 @@
             <div class="col-sm-12">
               <div class="card" style="margin-top: 20px;">
                 <div class="card-body">
-                  <h5 class="card-title border p-1 bg-light text-center dat">Diskon Awal Tahun</h5>
+                  <h5 class="card-title border p-1 text-center dat">Diskon Awal Tahun</h5>
                   <p class="card-subtitle mb-2 text-muted">Sampai dengan 70%</p>
                   <p class="card-text diskon-text">Ayo Buruan dapetin Diskonnya... keburu habis lohh.</p>
                   <p class="card-subtitle mb-2 text-muted mt-2">s/d 31 Desember 2021.</p>

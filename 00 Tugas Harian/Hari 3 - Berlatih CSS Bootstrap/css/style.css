@@ -71,9 +71,16 @@
 }
 
 .dat {
+    background-color: #043464;
+    color: white;
     font-size: 18px;
 }
 
 .diskon-text {
     font-size: 17px;
+}
+
+.filteran{
+    background-color: #043464;
+    color: white;
 }
