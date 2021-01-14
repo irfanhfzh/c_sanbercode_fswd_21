@@ -1,0 +1,362 @@
+<!-- SanberCode, Kelas Laravel - Web Developer (Batch 21) -->
+<!-- Irfan Hafizh -->
+<!-- Day 4 Javascript Kamis, 14 Januari 2021-->
+<!-- 
+    diGunakan untuk Website lebih Interaktif, bisa juga buat Back End dan Lainnya. 
+
+    Cara Menghubungkan Javascript :
+    Internal = menulis langsung di dalam file html dengan tag <script> sebelum penutup tag <body>
+    Eksternal = dengan membuat file sendiri dengan ekstensi .js dan menyambungkannya dengan src
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <div id="1"></div>
+    <div id="2"></div>
+    <div id="3"></div>
+    <div id="4"></div>
+    <div id="5"></div>
+    <div id="6"></div>
+    <div id="7"></div>
+    <div id="8"></div>
+    <div id="9"></div>
+    <div id="10"></div>
+    <div id="11"></div>
+    <div id="contoh"></div>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <!-- contoh penulisan kode Eksternal dengan menghubungkan nya dgn src filenya -->
+    <script src="script.js"></script>
+    <script>
+        //kode javascript
+        //contoh penulisan kode Internal Javascript
+        document.getElementById("1").innerHTML = "Test kode Internal Javascript"
+
+        // Variable
+        // ----------
+        // Variable = membuat nama ke suatu value/nilai berupa huruf(string) angka(integer) dll.
+        // Deklarasi variable dimulai dengan huruf, angka, _ dang $ = nilainya
+        // Nama variable termasuk sensitive sperti tabungan & Tabungan pasti berbeda.
+        var x = 1723456;
+        var _tabungan =  9999999;
+        document.getElementById("3").innerHTML = x;
+        document.getElementById("4").innerHTML = _tabungan;
+
+        // Tipe Data
+        // -----------
+        // Tipe Data String berupa huruf/text dimulai dg "tanda kutip" seperti "saya string", "12345"
+        // Tipe Data Integer berupa angka ditulis biasa seperti 10000, 100.123(float)
+        var string = "saya string";
+        var integer = 2345;
+        var integer2 = 1234;
+
+        // menjumlah sebuah variable di variable baru.
+        var angkaaa = integer + integer2;
+        // mengupdate / menghapus sebuah nilai dari variable yg sudah ada.
+        // variable integer dengan nilai yang BARU.
+        integer = 1000;
+        document.getElementById("5").innerHTML = angkaaa;
+
+        // String Method
+        // ---substring
+        // berfungsi menampilkan string dari karakter awal pada parameter pertama ke berapa sampai ke karakter akhir pada parameter kedua kaberapa contoh:
+        var str = "Hello world";
+        var res = str.substring(6,11);
+        //outputnya world
+
+        // ---substr
+        // berfungsi manampilkan string dari karakter awal pada parameter pertama dan panjang karakter pada parameter kedua
+        var kalimat = "Selamat Datang";
+        var output = kalimat.substr(8,6);
+        //output Datang
+
+        // ---replace
+        // berfungsi mengganti string yang diganti dari parameter pertama dan pada parameter kedua string yang menganti contoh:
+        var kalimat = "Selamat Datang";
+        var output = kalimat.replace("Datang","Pagi");
+        //output Selamat Pagi
+
+        // ---toUpperCase
+        // berfungsi mengubah string menjadi huruf kapital(Hrruf besar) contoh:
+        var kalimat = "Selamat Datang";
+        var output = kalimat.toUpperCase();
+        //output SELAMAT DATANG
+
+        // ---toLowerCase
+        // berfungsi mengubah string menjadi huruf kecil contoh:
+        var kalimat = "Selamat Datang";
+        var output = kalimat.toLowerCase();
+        //output selamatdatang
+
+        // ---length
+        // berfungsi menapilkan jumlah karakter pada string
+        var abjad = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var jumlah = abjad.length
+        //output 26
+
+        // ---indexOf
+        // berfungsi untuk mencari teks tertenu pada suatu string
+        // "Irfan"
+        // 0=I, 1=r, 2=f, 3=a, 4=n
+        var tekss = "Irfan";
+        var hasil = tekss.indexOf("f");
+        //output 2
+
+        // ---lastIndexOf
+        // berfungsi untuk mencari teks paling akhir
+        var tekss2 = "Irfana";
+        var hasil2 = tekss2.lastIndexOf("a");
+        // output 5
+
+        // ---search
+        // berfungsi untuk mencari lokasi pertama dari teks yang dimasukkan.
+        var tekss3 = "Irfan";
+        var hasil3 = tekss3.search("f");
+        // output 2
+
+        // ---charAt
+        // berfungsi untuk mencari berdasarkan posisi berupa angka.
+        var tekss4 = "Irfan";
+        var hasil4 = tekss4.charAt(3);
+        // output a
+
+        // parseInt
+        // berfungsi untuk merubah variable string menjadi integer.
+        var tekss5 = "284";
+        var hasil5 = parseInt(tekss5);
+        // output 284
+
+        // parseFloat
+        // berfungsi untuk merubah variable string menjadi integer termasuk dengan angka yg dibelakang koma.
+        var tekss6 = "284.24";
+        var hasil6 = parseFloat(tekss6);
+        // output 284.24
+
+        /* 
+        >>>>> Operator matematika 
+        + atau penjumlahan
+        - atau pengurangan
+        * atau perkalian
+        / atau pembagian
+        % atau modulo = sisa hasil dari pembagian 
+        
+        Increment = menambahkan hasilnya adalah 1 / menggunakan ++
+        Decrement = mengurangi hasilnya adalah 1 / menggunakan --
+        */
+       var penjumlahan = integer + integer2;
+       var pengurangan = integer - integer2;
+       var perkalian = integer * integer2;
+       var pembagian = integer / integer2;
+       var modulo = integer % integer2;
+       penjumlahan++; //contoh increment
+       pengurangan--; //contoh decrement
+       document.getElementById("6").innerHTML = penjumlahan;
+       document.getElementById("7").innerHTML = pengurangan;
+       document.getElementById("8").innerHTML = perkalian;
+       document.getElementById("9").innerHTML = pembagian;
+       document.getElementById("10").innerHTML = modulo;
+
+       // contoh lain operator matematika / penulisan singkat
+       var angka = 123.54321;
+       var angka2 = 321;
+       var angka3 = 1000;
+      //angka2 = angka2 + angka3;
+       angka2 += angka3;
+       document.getElementById("11").innerHTML = angka2;
+
+      //  Meethod number
+      // toFixed(n), menentukan berapa angka dibelakang koma yang diberikan.
+      // toString(), mengubah yg tadinya tipe data angka menjadi tipe data string.
+      // random(), membuat angka random dengan contoh Math.random();
+      // min(a, b, c), untuk mencari angka terkecil dari beberapa angka yg kita masukan.
+      // max(a, b, c), untuk mencari angka terbesar dari bbrapa angka yg kita masukan.
+      // round(), cara utk membulatkan angka ke angka terdekatnya.
+      // ceil(), berusaha untuk mencari angka / membulatkan angka ke arah atas / menambahkannya.
+      // floor(), berusaha untuk mencari angka / membulatkan angka ke arah bawah / menguranginya.
+      // Object Methods(contoh: abs, log)
+      // random spesific formula -> Math.floor(Math.random()*x) + 1;
+      var x = 10; // range / jarak maksimal
+      var y = 5; // batas maksimal
+      //  batas max = y+x;
+      var method = angka.toFixed(3);
+      var method2 = angka.toString();
+      var method3 = Math.random();
+      var method4 = Math.min(12, 2, 5);
+      var method5 = Math.max(5, 10, 1);
+      var method6 = Math.round(245.2521);
+      var method7 = Math.ceil(245.21341);
+      var method8 = Math.floor(245.12419313)
+      // random spesific formula -> Math.floor(Math.random()*x) + 1(atau variable);
+      var method9 = Math.floor(Math.random()*x) + y;
+      var methodLain = Math.random().toFixed(3);
+
+      document.getElementById("contoh").innerHTML = hasil6;
+
+
+      // --------------------------------Function
+      // contoh:
+      function penjumlahans(angka12, angka22) {
+        return angka12 + angka22;
+      }
+      // document.getElementById("demo"),innerHTML = penjumlahans(4, 4);
+      console.log(penjumlahans(4, 4));
+      //output 8
+      // contoh lain :
+      function bio(nama, umur) {
+      return "Nama Saya " + nama + "Umur saya " + umur;
+      }
+      // document.getElementById("demo2"),innerHTML = bio("Rezky Putra", 24);
+      console.log(bio("Rezky Putra", 24));
+      //output Nama Saya Rezky Putra Umur saya 24
+
+
+      // --------------------------------Operator Pembanding
+      // ==	sama dengan
+      // ===	sama dangan (dengan tipe data sama)
+      // !=	tidak sama dengan
+      // >	lebih besar
+      // <	lebih kecil
+      // >=	lebih besar sama dengan
+      // <=	lebih kecil sama dengan
+
+
+      // --------------------------------Operator Aritmatika
+      // +	penjumlahan
+      // –	pengurangan
+      // *	perkalian
+      // /	pembagian
+      // %	modulus(sisa hasil bagi)
+      // ++	increment
+      // --	decrement
+
+
+      // --------------------------------Operator AND, OR
+      // Logika AND
+      // true && true menjadi true
+      // true && false menjadi false
+      // false && true menjadi false
+      // false && false menjadi	false
+      // Logika OR
+      // true || true menjadi	true
+      // true || false menjadi true
+      // false || true menjadi true
+      // false || false menjadi false
+
+
+      // --------------------------------Condition
+      // if statement
+      // cara penulisan
+      // if(condition){
+      // //output
+      // }
+      // contoh if:
+      var age=9;
+      if (age<10)
+      {
+        "sudah memasuki usia balita"; 
+      }
+      //output
+      // sudah mamasuki usia balita
+
+      // If else statement
+      // cara penulisan
+      // if(condition)
+      // {
+      // //output
+      // }else{
+      // //output
+      // }
+      // contoh if else statment:
+      age=17;
+      if (age<10)
+      {
+        "masih balita"; 
+      }else{
+        "sudah bukan balita";
+      }
+      //output
+      // sudah bukan balita
+
+      // if..else if.. else
+      // cara penulisan
+      // if(condition){
+      // //ouput
+      // } else if(condition){
+      // //output
+      // }else{
+      // //output
+      // }
+      // contoh:
+      var nilai=66;
+      if (nilai>90)
+      {
+        "Sangat baik"; 
+      }else if(nilai<90 && nilai>=75){
+        "Baik";
+      }else if(nilai<75 && nilai>=65){
+        "Cukup";
+      }else if(nilai<65 && nilai>=55){
+        "Kurang";
+      }else{
+        "Error";
+      }
+      //output
+      // Cukup
+
+
+      // --------------------------------Looping/perulangan
+
+      // for loop
+      // cara penulisan
+      // for (mulai, akhir, operator aritmatika){
+      // //output
+      // }
+      // contoh :
+      var output = "";
+      for(i=1; i<10; i++){
+        output += i + "- urutan 1 sampai 10 <br>"
+      }
+      //output
+      // 1 - urutan 1 sampai 10
+      // 2 - urutan 1 sampai 10
+      // 3 - urutan 1 sampai 10
+      // 4 - urutan 1 sampai 10
+      // 5 - urutan 1 sampai 10
+      // 6 - urutan 1 sampai 10
+      // 7 - urutan 1 sampai 10
+      // 8 - urutan 1 sampai 10
+      // 9 - urutan 1 sampai 10
+      // 10 - urutan 1 sampai 10
+
+      // while loop
+      // cara penulisan
+      // while (condition){
+      // //output
+      // }
+      // contoh:
+      var i=1;
+      var text ="";
+      while(i<10){
+        text += i + " urutan ke- " + i + "<br>";
+        i++;
+      }
+      //output
+      // 1 uratan ke- 1
+      // 2 urutan ke- 2
+      // 3 urutan ke- 3
+      // 4 urutan ke- 4
+      // 5 urutan ke- 5
+      // 6 urutan ke- 6
+      // 7 urutan ke- 7
+      // 8 urutan ke- 8
+      // 9 urutan ke- 9
+      // 10 urutan ke- 10
+
+    </script>
+</body>
+</html>
