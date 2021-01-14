@@ -65,16 +65,23 @@
         // buatlah kondisional berdasarkan dua variabel di atas yaitu name dan role, ketentuannya dapat dibaca di atas
         var output = "";
         if(name != ""){
-            if(role != ""){
-                output += "Selamat datang di Dunia " +role+ "," + " " +name + "<br>" + "Halo " + role + " " + name + ", kamu dapat memulai permainannya.";
-            }else {
-                output += "Halo " +name+ ", Pilih peranmu untuk memulai game!";
+            if(role == "Penyihir"){
+                output += "Selamat datang di Dunia Werewolf," + " " +name + "<br>" + "Halo " + role + " " + name + ", kamu dapat melihat siapa yang menjadi Werewolf!";
+            }else if(role == "Werewolf"){
+                output += "Selamat datang di Dunia Werewolf," + " " +name + "<br>" + "Halo " + role + " " + name + ", kamu dapat memilih siapa untuk dimakan malam ini!";
+            }else if(role == "Rakjel"){
+                output += "Selamat datang di Dunia Werewolf," + " " +name + "<br>" + "Halo " + role + " " + name + ", Kamu menjadi rakyat jelata.";
+            }else{
+                output += "Halo " +name+ ", Pilih Peran yang Tersedia untuk masuk ke di Dunia Werewolf! <br> - Peran yang Tersedia: <br> <ul><li>Penyihir</li> <li>Werewolf</li> <li>Rakjel</li></ul>";
             }
-        }else if(name == ""){
-            output += "Peranmu menjadi " + role + ", Isi Namamu terlebih dahulu untuk memulai game!";
-        }else {
-            output += "Nama dan Role harus diisi!";
+        }else if(name == "" && role == ""){
+            output += "Nama dan Peran harus di Isi!"   
+        }else if(role == "Werewolf" || role == "Penyihir" || role == "Rakjel"){
+            output += "Peranmu menjadi " + role + ", Isi Namamu terlebih dahulu untuk masuk ke di Dunia Werewolf!";
+        }else{
+            output += "Pilih Peran yang Tersedia, dan Isi Namamu terlebih dahulu untuk memulai game! <br> - Peran yang Tersedia: <br> <ul><li>Penyihir</li> <li>Werewolf</li> <li>Rakjel</li></ul>"
         }
+
 
         var jawabanKonsol = output; // jawaban dari kondisional di-assign di sini
         // Code Sampai sini

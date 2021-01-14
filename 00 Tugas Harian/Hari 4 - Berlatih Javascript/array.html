@@ -21,7 +21,7 @@
         <input type="text" id="word" placeholder="masukkan kalimat">
         <input type="submit" value="Balik Kalimat">
     </form>
-    <div id="jawaban1" style="margin-top: 10px"></div>
+    <div id="jawaban1" style="margin-top: 10px; display: block;"></div>
     
     <h3>Looping Array</h3>
     <div id="jawaban2"></div>
@@ -42,12 +42,12 @@
             Hint: Gunakan properti length dari string untuk mencari tahu panjang string
         */
         // Code Kamu di sini
-        var tampung = "";
+        var masukan = "";
         function balikString(kalimat){
             for(var i = kalimat.length - 1; i>=0; i--){
-                tampung += kalimat[i]
+                masukan += kalimat[i]
             }
-            return tampung;
+            return masukan;
         }
         
         // Driver Code, jangan diganggu!
@@ -57,7 +57,7 @@
             var word = document.getElementById("word").value
             var reverseWord = balikString(word)
 
-            document.getElementById("jawaban1").innerHTML = reverseWord + "  "
+            document.getElementById("jawaban1").innerHTML = reverseWord
         })        
         
         /* 
