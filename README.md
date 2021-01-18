@@ -12,6 +12,8 @@
         <li><a href="00 Tugas Harian/Pekan 1 - Hari 3 - Berlatih CSS Bootstrap/index.html" target="_blank">Rabu, 13 Januari 2021 - Hari 3 - Berlatih CSS Bootstrap</a> -> <a href="https://github.com/irfanhfzh/c_sanbercode_fswd_21/tree/master/00%20Tugas%20Harian/Hari%203%20-%20Berlatih%20CSS%20Bootstrap" target="_blank">Source Code</a></li>
         <li><a href="https://github.com/irfanhfzh/c_sanbercode_fswd_21/tree/master/00%20Tugas%20Harian/Hari%204%20-%20Berlatih%20Javascript" target="_blank">Kamis, 14 Januari 2021 - Hari 4 - Berlatih Javascript</a> -> <a href="https://github.com/irfanhfzh/c_sanbercode_fswd_21/tree/master/00%20Tugas%20Harian/Hari%204%20-%20Berlatih%20Javascript" target="_blank">Source Code</a></li>
          <li><a href="00 Tugas Harian/Pekan 1 - Hari 5 - DOM Javascript/index.html" target="_blank">Jumat, 15 Januari 2021 - Hari 5 - DOM Javascript</a> -> <a href="https://github.com/irfanhfzh/c_sanbercode_fswd_21/tree/master/00%20Tugas%20Harian/Pekan%201%20-%20Hari%205%20-%20DOM%20Javascript" target="_blank">Source Code</a></li>
+        <li><h3>Pekan 2</h3></li>
+        <li><a href="https://github.com/irfanhfzh/c_sanbercode_fswd_21/tree/master/00%20Tugas%20Harian/Pekan%202%20-%20Hari%201%20-%20PHP%20Bagian%201%20(String%20dan%20Array)/php-1" target="_blank">Senin, 18 Januari 2021 - Hari 1 - PHP Dasar1 (String dan Array)</a> -> <a href="https://github.com/irfanhfzh/c_sanbercode_fswd_21/tree/master/00%20Tugas%20Harian/Pekan%202%20-%20Hari%201%20-%20PHP%20Bagian%201%20(String%20dan%20Array)/php-1" target="_blank">Source Code</a></li>
     </ul>
 </body>
 </html>
