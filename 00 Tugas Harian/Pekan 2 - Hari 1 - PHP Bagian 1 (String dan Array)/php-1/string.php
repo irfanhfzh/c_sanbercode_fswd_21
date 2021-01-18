@@ -23,18 +23,13 @@
 
         $first_sentence = "Hello PHP!" ; // Panjang string 10, jumlah kata: 2
         $second_sentence = "I'm ready for the challenges"; // Panjang string: 28,  jumlah kata: 5
-        $string_first_sentence = strlen($first_sentence);
-        $word_first_sentence = str_word_count($first_sentence);
-        $string_second_sentence = strlen($second_sentence);
-        $word_second_sentence = str_word_count($second_sentence);
 
         echo $first_sentence;
-        echo "<br>Panjang string: \"$string_first_sentence\" ";
-        echo "<br>jumlah kata: \"$word_first_sentence\" <br><br>";
-        
+        echo "<br>Panjang string: " . strlen($first_sentence);
+        echo "<br>jumlah kata: " . str_word_count($first_sentence) . "<br><br>" ;
         echo $second_sentence;
-        echo "<br>Panjang string: \"$string_second_sentence\" ";
-        echo "<br>jumlah kata: \"$word_second_sentence\" ";
+        echo "<br>Panjang string: " . strlen($second_sentence);
+        echo "<br>jumlah kata: " . str_word_count($second_sentence);
 
         echo "<h3> Soal No 2</h3>";
         /* 
@@ -58,7 +53,7 @@
         $output = str_replace("sexy", "awesome", $string3);
         echo "String: \"$string3\" <br>"; 
         // OUTPUT : "PHP is old but awesome"
-        echo "Replace String: \"$output\" ";
+        echo "OUTPUT Replace String: \"$output\" ";
     ?>
 </body>
 </html>

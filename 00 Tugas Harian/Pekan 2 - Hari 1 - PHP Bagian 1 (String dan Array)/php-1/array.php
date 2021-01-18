@@ -20,7 +20,10 @@
         $kids = array("Mike", "Dustin", "Will", "Lucas", "Max", "Eleven"); // Lengkapi di sini
         $adults = array("Hopper", "Nancy",  "Joyce", "Jonathan", "Murray"); 
 
-        echo "No Display for Soal 1 <br> Jawabannya ada di Code";
+        echo "Kids : ";
+        print_r($kids);
+        echo "<br> Adults : ";
+        print_r($adults);
 
         echo "<h3> Soal 2</h3>";
         /* 
@@ -82,50 +85,40 @@
             
         */
         $biodata = array(
-            "Name" => array(
-            "name1" => "Will Byers", 
-            "name2" => "Mike Wheeler", 
-            "name3" => "Jim Hopper", 
-            "name4" => "Eleven"
-            ),
-            "Age" => array(
-            "age1" => 12, 
-            "age2" => 12, 
-            "age3" => 43, 
-            "age4" => 12
-            ),
-            "Aliases" => array(
-            "alias1" => "Will the Wise", 
-            "alias2" => "Dungeon Master", 
-            "alias3" => "Chief Hopper", 
-            "alias4" => "El"
-            ),
-            "Status" => array("status" => "Alive")
+            "Biodata1" => array("Name" => "Will Byers", "Age" => 12, "Alias" => "Will the Wise", "Status" => "Alive"),
+            "Biodata2" => array("Name" => "Mike Wheeler", "Age" => 12, "Alias" => "Dungeon Master", "Status" => "Alive"),
+            "Biodata3" => array("Name" => "Jim Hopper", "Age" => 43, "Alias" => "Chief Hopper", "Status" => "Deceased"),
+            "Biodata4" => array("Name" => "Eleven", "Age" => 12, "Alias" => "El", "Status" => "Alive")
         );
+        echo "<h3>Asosiatif Array</h3>";
+        echo "<pre>";
+        print_r($biodata);
+        echo "</pre>";
     ?>
+    <h3>Array Multidimensi</h3>
     <ul>
-        <li>Name: <?php echo $biodata["Name"]["name1"] ?></li>
-        <li>Age: <?php echo $biodata["Age"]["age1"] ?></li>
-        <li>Aliases: <?php echo $biodata["Aliases"]["alias1"] ?></li>
-        <li>Status: <?php echo $biodata["Status"]["status"] ?></li>
+        <li>Name: <?php echo $biodata["Biodata1"]["Name"] ?></li>
+        <li>Age: <?php echo $biodata["Biodata1"]["Age"] ?></li>
+        <li>Aliases: <?php echo $biodata["Biodata1"]["Alias"] ?></li>
+        <li>Status: <?php echo $biodata["Biodata1"]["Status"] ?></li>
     </ul>
     <ul>
-        <li>Name: <?php echo $biodata["Name"]["name2"] ?></li>
-        <li>Age: <?php echo $biodata["Age"]["age2"] ?></li>
-        <li>Aliases: <?php echo $biodata["Aliases"]["alias2"] ?></li>
-        <li>Status: <?php echo $biodata["Status"]["status"] ?></li>
+        <li>Name: <?php echo $biodata["Biodata2"]["Name"] ?></li>
+        <li>Age: <?php echo $biodata["Biodata2"]["Age"] ?></li>
+        <li>Aliases: <?php echo $biodata["Biodata2"]["Alias"] ?></li>
+        <li>Status: <?php echo $biodata["Biodata2"]["Status"] ?></li>
     </ul>
     <ul>
-        <li>Name: <?php echo $biodata["Name"]["name3"] ?></li>
-        <li>Age: <?php echo $biodata["Age"]["age3"] ?></li>
-        <li>Aliases: <?php echo $biodata["Aliases"]["alias3"] ?></li>
-        <li>Status: <?php echo $biodata["Status"]["status"] ?></li>
+        <li>Name: <?php echo $biodata["Biodata3"]["Name"] ?></li>
+        <li>Age: <?php echo $biodata["Biodata3"]["Age"] ?></li>
+        <li>Aliases: <?php echo $biodata["Biodata3"]["Alias"] ?></li>
+        <li>Status: <?php echo $biodata["Biodata3"]["Status"] ?></li>
     </ul>
     <ul>
-        <li>Name: <?php echo $biodata["Name"]["name4"] ?></li>
-        <li>Age: <?php echo $biodata["Age"]["age4"] ?></li>
-        <li>Aliases: <?php echo $biodata["Aliases"]["alias4"] ?></li>
-        <li>Status: <?php echo $biodata["Status"]["status"] ?></li>
+        <li>Name: <?php echo $biodata["Biodata4"]["Name"] ?></li>
+        <li>Age: <?php echo $biodata["Biodata4"]["Age"] ?></li>
+        <li>Aliases: <?php echo $biodata["Biodata4"]["Alias"] ?></li>
+        <li>Status: <?php echo $biodata["Biodata4"]["Status"] ?></li>
     </ul>
 </body>
 </html>
