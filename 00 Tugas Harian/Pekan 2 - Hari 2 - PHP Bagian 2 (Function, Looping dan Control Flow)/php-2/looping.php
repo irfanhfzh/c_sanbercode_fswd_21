@@ -64,12 +64,19 @@
 
         $numbers = [18, 45, 29, 61, 47, 34];
         echo "array numbers: ";
+        echo "<pre>";
         print_r($numbers);
+        echo "</pre>";
         // Lakukan Looping di sini
+        foreach($numbers as $satuan){
+            $rest[] = $satuan %= 5;
+        }
 
         echo "<br>";
         echo "Array sisa baginya adalah:  "; 
-        echo "<br>";
+        echo "<pre>";
+        print_r($rest);
+        echo "</pre>";
 
         echo "<h3> Soal No 3 Looping Asociative Array </h3>";
         /* 
@@ -92,6 +99,18 @@
         ];
         
         // Output: 
+        foreach($items as $key => $data) {
+            $kuy = array (
+                'id' => $data[0],
+                'name' => $data[1],
+                'price' => $data[2],
+                'description' => $data[3],
+                'source' => $data[4]
+            );
+            echo "<pre>";
+            print_r($kuy);
+            echo "</pre>";
+        }
         
         echo "<h3>Soal No 4 Asterix </h3>";
         /* 
@@ -107,9 +126,14 @@
         */
         echo "Asterix: ";
         echo "<br>";
+        $star=5;
+        for($a=$star;$a>0;$a--){
+        for($b=$star;$b>=$a;$b--){
+            echo "* ";
+        }
+        echo "<br>";
+        }
 
-
-        
     ?>
 
 </body>
