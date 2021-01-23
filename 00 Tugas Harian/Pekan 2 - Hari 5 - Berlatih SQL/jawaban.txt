@@ -1,0 +1,62 @@
+My Requirements :
+- Web Server = Laragon
+- Database = MySQL version 5.7.24
+- Web database management = phpMyAdmin
+
+----------------------------------- Jawaban Tugas SQL -----------------------------------
+
+1. Membuat Database dengan nama 'myshop'
+----- Buat Database :
+CREATE DATABASE myshop;
+
+2. Membuat Table users, items, categories di dalam database 'myshop' :
+----- Table users :
+CREATE TABLE users (
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(255),
+    email varchar(255),
+    password varchar(255),
+    PRIMARY KEY (id)
+)
+
+----- Table items :
+CREATE TABLE items (
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(255),
+    description varchar(255),
+    price int,
+    stock int,
+    category_id int,
+    PRIMARY KEY (id),
+    FOREIGN KEY (category_id) REFERENCES categories (id)
+)
+
+----- Table categories :
+CREATE TABLE categories (
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(255),
+    PRIMARY KEy (id)
+)
+
+3. Memasukkan Data pada Table
+----- Table users :
+INSERT INTO `users`(`id`, `name`, `email`, `password`) 
+VALUES (NULL,'John Doe','john@doe.com','john123'),
+        (NULL,'Jane Doe','jane@doe.com','jenita123')
+
+----- Table items :
+INSERT INTO `items`(`id`, `name`, `description`, `price`, `stock`, `category_id`) 
+VALUES (NULL,'Sumsang b50','hape keren dari merek sumsang',4000000,100,1),
+        (NULL,'Uniklooh','baju keren dari brand ternama',500000,50,2),
+        (NULL,'IMHO Watch','jam tangan anak yang jujur banget',2000000,10,1)
+
+----- Table categories :
+INSERT INTO `categories`(`id`, `name`) 
+VALUES (NULL,'gadget'),
+        (NULL,'cloth'),
+        (NULL,'men'),
+        (NULL,'women'),
+        (NULL,'branded')
+
+4. Mengambil Data dari Database
+
