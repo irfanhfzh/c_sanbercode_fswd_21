@@ -70,7 +70,7 @@ a. SELECT * FROM `items` WHERE price > 1000000
 
 b. SELECT * FROM `items` WHERE name LIKE '%sang%'
 
-c. 
+c. SELECT categories.name AS kategori FROM categories JOIN items ON categories.id=items.category_id
 
 
 5. Mengubah Data dari Database
