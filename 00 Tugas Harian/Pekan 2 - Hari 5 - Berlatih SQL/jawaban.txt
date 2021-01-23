@@ -59,4 +59,17 @@ VALUES (NULL,'gadget'),
         (NULL,'branded')
 
 4. Mengambil Data dari Database
+----- Table users :
+SELECT id, name, email FROM `users`
 
+----- Table items :
+a. SELECT * FROM `items` WHERE NOT price=500000
+
+b. SELECT * FROM `items` WHERE name LIKE '%sang%'
+
+c. 
+
+
+5. Mengubah Data dari Database
+----- Table items :
+UPDATE `items` SET price=2500000 WHERE name='Sumsang b50'
