@@ -46,9 +46,12 @@ VALUES (NULL,'John Doe','john@doe.com','john123'),
 
 ----- Table items :
 INSERT INTO `items`(`id`, `name`, `description`, `price`, `stock`, `category_id`) 
-VALUES (NULL,'Sumsang b50','hape keren dari merek sumsang',4000000,100,1),
-        (NULL,'Uniklooh','baju keren dari brand ternama',500000,50,2),
-        (NULL,'IMHO Watch','jam tangan anak yang jujur banget',2000000,10,1)
+VALUES (NULL,'Sumsang b50','hape keren dari merek sumsang',4000000,100, 
+        (SELECT id from categories WHERE name='gadget')),
+        (NULL,'Uniklooh','baju keren dari brand ternama',500000,50, 
+         (SELECT id from categories WHERE name='cloth')),
+        (NULL,'IMHO Watch','jam tangan anak yang jujur banget',2000000,10, 
+         (SELECT id from categories WHERE name='gadget'))
 
 ----- Table categories :
 INSERT INTO `categories`(`id`, `name`) 
@@ -63,7 +66,7 @@ VALUES (NULL,'gadget'),
 SELECT id, name, email FROM `users`
 
 ----- Table items :
-a. SELECT * FROM `items` WHERE NOT price=500000
+a. SELECT * FROM `items` WHERE price > 1000000
 
 b. SELECT * FROM `items` WHERE name LIKE '%sang%'
 
