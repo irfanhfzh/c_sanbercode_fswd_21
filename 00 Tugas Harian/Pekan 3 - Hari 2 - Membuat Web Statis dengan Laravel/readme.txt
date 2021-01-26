@@ -1,0 +1,1 @@
+Pekan 3 - Hari 2 - Membuat Web Statis dengan Laravel berada di Repo yang lain
